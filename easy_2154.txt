@@ -1,0 +1,14 @@
+in this problem we neet to find the value in array if found then double it and move further anf if found the one time doubled value then
+double it again and repeat this process on the sorted array, to give the optimal and best answer.
+
+int findFinalValue(vector<int>& nums, int original) {
+        int ans = original;
+        sort(nums.begin(),nums.end());
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] == original) {
+                original = original * 2;
+                ans = original;
+            }
+        }
+        return ans;
+    }

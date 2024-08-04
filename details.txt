@@ -1,2 +1,2 @@
-merge two sorted list
+keep multiplying the found values
 do 232
